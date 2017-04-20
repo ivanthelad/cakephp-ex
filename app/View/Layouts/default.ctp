@@ -329,6 +329,7 @@ oc deploy cakephp-mysql-example --latest
                           $connection->execute('create table view_counter (c integer)');
                         } catch (Exception $e) {
                         	$tableExisted=1;
+				
                         }
                         try {
                             if ($tableExisted==0) {
